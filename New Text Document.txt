@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<address Orfews 92,<br>ATTIKI,<br>GREECE,<br>POST CODE 11855.<br> 
+Visit us at:<br>
+Example.com<br>
+Orfews 92, Disneyland<br>
+Greece<br>ATTIKI</br>POST CODE 11855
+</address>
+</body>
+</html>
