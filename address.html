@@ -3,31 +3,22 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.address{
-font-size:30px;
-padding:16px;
-text-align:center;
-background-color:white;
-}
-.paragr{
-text-align:center;
-}
-</style>
-<style>
+* {box-sizing: border-box;}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .topnav {
-  position: relative;
   overflow: hidden;
-  background-color: #333;
+  background-color: #e9e9e9;
 }
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  display: block;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -40,69 +31,87 @@ body {
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #2196F3;
   color: white;
 }
 
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.topnav-right {
+.topnav .search-container {
   float: right;
 }
 
-/* Responsive navigation menu (for mobile devices) */
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
 @media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
     float: none;
     display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
   }
-  
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
   }
 }
 </style>
+<style>.info{
+text-align:center;
+font-size:20px;
+}
+
+</style>
 </head>
 <body>
-</div>
-<!-- Top navigation -->
+
 <div class="topnav">
-
-  <!-- Left-aligned links (default) -->
-<a href="webpage.html">Home</a>
-  <a href="http://www.visitgreece.gr/">News</a>
+  <a class="active" href="webpage.html">Home</a>
+  <a href="https://www.google.gr/destination?q=greece&site=search&output=search&dest_mid=/m/035qy&sa=X&ved=0ahUKEwiQkpf6pJ_dAhWFOSwKHYGeB7AQ6tEBCHIoBDAN">About Greece</a>
   <a href="address.html">Contact</a>
-  
-  <!-- Right-aligned links -->
-  <div class="topnav-right">
-    <a href="signin.html">Log In</a>
-    <a href="signup.html">Sign Up</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
   </div>
-  
 </div>
-
+<div style="padding-left:16px"> </div>
 <div style="padding-left:16px">
-  
 </div>
 
-<h1 class="address">Informations</h1>
-<p class="paragr">
+
+<h1 class="info">Informations</h1>
+<p class="info">
 <b> Visit us at:</b><br>
 Example.com<br>
-ORFEWS 92<br>
-ATTIKI</br>POST CODE 11855 <br>GREECE
+Giannoyli 98<br>
+ATTIKI</br>POST CODE 22424 <br>GREECE
 </p>
 <br>
-<p class="paragr">
+<p class="info">
 <embed width="420" height="315"
 src="https://www.youtube.com/embed/Xh12yb0WPAw">
 </p>
